@@ -31,3 +31,4 @@ pedidos, clientes, etc.
 1. Demonstrar lógica de programação e uso de estruturas como listas, dicionários, funções, classes etc.
 1. Produzir documentação explicativa do projeto.
 1. Compartilhar o código via GitHub, com acesso público.
+
