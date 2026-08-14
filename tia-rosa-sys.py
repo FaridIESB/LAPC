@@ -6,12 +6,15 @@ import random
 
 cardapio = []
 
+#Cria classe de itens de cardapio
 class ItemCardapio:
     def __init__(self, nome, categoria, vegetariano, preco):
         self.nome = nome
         self.categoria = categoria
         self.vegetariano = vegetariano
         self.preco = preco
+
+#Função para cadastrar os itens
 
 def cadastro_cardapio():
     print()
@@ -28,6 +31,7 @@ def cadastro_cardapio():
 
     item = ItemCardapio(nome, categoria, vegetariano, preco)
 
+# Adiciona itens
     cardapio.append(item)
 
     print()
@@ -85,7 +89,7 @@ def realizar_pedido():
 
     extra = False
 
-    # realizar pedido
+    # pegar dados do pedido
     id_cliente = input("Número de fidelidade do cliente:  \n")
     prato = input("Qual o prato?  \n")
     bebiba = input("\nQual a bebiba?  \n")
@@ -145,6 +149,8 @@ def realizar_pedido():
 
 # MENU CARDÁPIO
 
+# Menu do cardápio para cadastrar mais itens ou voltar ao menu inicial
+
 def menu_cardapio():
 
     cardapio_menu = True
@@ -173,6 +179,8 @@ def menu_cardapio():
 
 
 # MENU DE CADASTRO DE CLIENTES
+
+# Menu do cardápio para cadastrar mais clientes ou voltar ao menu inicial
 
 def menu_cadastro():
 
@@ -233,6 +241,7 @@ def menu():
         print("")
         opcao = input("Digite a opção:")
         print("")
+        #escolhe entre as opções e leva as funções 
         if opcao == "1":
             menu_cardapio()
         elif opcao == "2":
@@ -258,3 +267,7 @@ def menu():
 ###########################################
 
 menu()
+
+
+
+
